@@ -1,0 +1,606 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Smart & Elegant</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html" class="nav__logo">
+                    <i class='bx bxs-business nav__logo-icon'></i> Smart & Elegant
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="progress.html" class="nav__link active-link">Tech Accesorios</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#featured" class="nav__link">Smart & Elegant</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="cuelleros.html" class="nav__link">Tecnología</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="pago.html" class="nav__link">Accesorios Premium 24/7</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <div class="nav__shop" id="cart-shop">
+                        <i class='bx bx-shopping-bag' ></i>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== CART ====================-->
+        <!-- <div class="cart" id="cart">
+            <i class='bx bx-x cart__close' id="cart-close"></i>
+
+            <h2 class="cart__title-center">Carrito</h2>
+
+            <div class="cart__container">
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/featured1.png" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Jazzmaster</h3>
+                        <span class="cart__price">$1050</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/featured3.png" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Rose Gold</h3>
+                        <span class="cart__price">$850</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/new1.png" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Longines Rose</h3>
+                        <span class="cart__price">$980</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cart__prices">
+                <span class="cart__prices-item">3 items</span>
+                <span class="cart__prices-total">$2880</span>
+            </div>
+        </div> -->
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <div class="home__img-bg">
+                        <img src="assets/img/home.png" alt="" class="home__img">
+                    </div>
+    
+                    <div class="home__social">
+                        <a href="#" target="_blank" class="home__social-link">
+                            Colombia
+                        </a>
+                        <a href="https://www.tiktok.com/@promociones.colom" target="_blank" class="home__social-link">
+                            Tiktok
+                        </a>
+                        <a href="https://drive.google.com/file/d/14PPqdThbW4ZXKdAFBJHz-yoQXjDh25CQ/view?usp=drive_link" target="_blank" class="home__social-link">
+                            Legalidad
+                        </a>
+                    </div>
+    
+                    <div class="home__data">
+                        <h1 class="home__title">COMBO <br> SMARTWATCH SERIE X PRO + CORREA EXTRA</h1>
+                        <p class="home__description">
+                            Lleva la última generación en relojes inteligentes con funciones de salud, deporte y notificaciones. Incluye 1 año de garantía, envío gratis a toda Colombia y diferentes métodos de pago. Conectividad estable, batería de larga duración y estilo premium para cada ocasión.
+                        </p>
+                        <span class="home__price">$75.000 COP Entregas gratis en Barrancabermeja</span>
+
+                        <div class="home__btns">
+                            <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto" class="button button--gray button--small">
+                                WHATSAPP
+                            </a>
+
+                            <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto%20Combo%20de%20,$260.000" class="button home__button">ADQUIRIR PROMOCION</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== FEATURED ====================-->
+            <section class="featured section container" id="featured">
+                <h2 class="section__title">
+                    Caracterizados por su calidad & durabilidad
+                </h2>
+
+                <div class="featured__container grid">
+                    <article class="featured__card">
+                        <span class="featured__tag">En Promo venta</span>
+
+                        <img src="assets/img/featured1.png" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">TWS Wireless Earbuds with LED</h3>
+                            <span class="featured__price">$60.000 COP</span>
+                        </div>
+
+                        <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto" class="button featured__button">Realizar Pedido</a>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">En Promo venta</span>
+
+                        <img src="assets/img/featured2.png" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Clip-On Sports Headphones</h3>
+                            <span class="featured__price">$70.000 COP</span>
+                        </div>
+
+                        <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto" class="button featured__button">Realizar Pedido</a>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">En Promo venta</span>
+
+                        <img src="assets/img/featured3.png" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Wireless Headphones, Bluetooth 5.3</h3>
+                            <span class="featured__price">$110.000 COP</span>
+                        </div>
+
+                        <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto" class="button featured__button">Realizar Pedido</a>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== STORY ====================-->
+            <section class="story section container">
+                <div class="story__container grid">
+                    <div class="story__data">
+                        <h2 class="section__title story__section-title">
+                            XUN - Wireless In-Ear Headphones
+                        </h2>
+    
+                        <h1 class="story__title">
+                            Envios Barrancabermeja <br> gratis $67.000
+                        </h1>
+    
+                        <p class="story__description">
+                            Contamos con los mejores headphones de alta calidad en todos los estilos, solicita el de tu preferencia, tenemos promoción en todas los productos,
+                            envios totalmente gratis, solo en barrancabermeja, metodo de pago, transferencia nequi, muy pronto habrán pagos contra entrega! Envios seguros, enviamos inmediatamente la guia del pedido.
+                        </p>
+    
+                        <a href="https://wa.me/+573246394689?text=Hola%20buenas%20,me%20interesa%20tu%20producto%XUN%Wireless%In%Ear%Headphones%quiero%hacer%el%pedido%ya." class="button button--small">ADQUIRIR PRODUCTO</a>
+                    </div>
+
+                    <div class="story__images">
+                        <img src="assets/img/story.png" alt="" class="story__img">
+                        <div class="story__square"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="products section container" id="products">
+                <h2 class="section__title">
+                    LO MEJOR EN EARPHONES
+                </h2>
+
+                <div class="products__container grid">
+                    <article class="products__card">
+                        <img src="assets/img/product1.png" alt="" class="products__img">
+
+                        <h3 class="products__title">Senyang True Wireless On-Ear</h3>
+                        <span class="products__price">$68.000 cop</span>
+
+                        <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto" class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </a>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/product2.png" alt="" class="products__img">
+
+                        <h3 class="products__title">HIFI Sound Quality Earphone</h3>
+                        <span class="products__price">$70.000 cop</span>
+
+                        <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto" class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </a>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/product3.png" alt="" class="products__img">
+
+                        <h3 class="products__title">AOC TWS Wireless Earbuds</h3>
+                        <span class="products__price">$85.000 cop</span>
+
+                        <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto" class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </a>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/product4.png" alt="" class="products__img">
+
+                        <h3 class="products__title">JP EW112 TWS Wireless</h3>
+                        <span class="products__price">$88.000 cop</span>
+
+                        <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto" class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </a>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/product5.png" alt="" class="products__img">
+
+                        <h3 class="products__title">ED Power Display TWS Earphone</h3>
+                        <span class="products__price">$90.000 cop</span>
+
+                        <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto" class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </a>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/product6.png" alt="" class="products__img">
+
+                        <h3 class="products__title">ACER TWS Wireless Earbuds</h3>
+                        <span class="products__price">$90.000 cop</span>
+
+                        <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto" class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <!-- <section class="testimonial section container">
+                <div class="testimonial__container grid">
+                    <div class="swiper testimonial-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    ¡Saludos a todos! No puedo contener mi emoción al hablar sobre la increíble experiencia que tuve con esta empresa y su amplia gama de productos. Recientemente adquirí el combo JRL GOLD y debo decir que estoy más que impresionado. Desde el momento en que realicé mi pedido, me sentí seguro y respaldado por la seriedad y profesionalismo que mostraron. Aunque había cierta incertidumbre al realizar el pago por adelantado, pronto se disipó cuando recibí mi pedido en tan solo dos días hábiles. La calidad del producto superó todas mis expectativas, y cada artículo incluido en el combo es simplemente excepcional. Además, el hecho de que ofrezcan envío gratuito a domicilio es un gran valor agregado. Sin duda, esta empresa se ha ganado mi confianza y lealtad como cliente. Recomiendo encarecidamente sus servicios a cualquiera que busque calidad y confiabilidad en sus compras.
+                                </p>
+                                <h3 class="testimonial__date">Feb 21. 2024</h3>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">Carlos Perez</span>
+                                        <span class="testimonial__perfil-detail">Cliente Tiktok (CALI)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    ¡Hola! No tengo palabras para expresar lo impresionado que estoy con la cantidad de ofertas que esta empresa presenta en el mercado. ¡Realmente sorprendente! Recomiendo encarecidamente sus servicios, basado en mi experiencia personal. Mi primera compra fue el combo Babyliss Combo Boost Chameleon, una elección que no me arrepiento en absoluto. Opté por este combo emocionante y pagué por adelantado, algo que siempre genera un poco de ansiedad para ver qué tan confiables son. Sin embargo, todo salió perfecto. ¡Recibí mi pedido en solo dos días! La calidad del producto es excepcional y auténtica, como esperaba. Además, el hecho de que ofrezcan envío gratuito a domicilio es un gran plus. ¡Definitivamente volveré a comprar con ellos en el futuro!
+                                </p>
+                                <h3 class="testimonial__date">Feb 22. 2024</h3>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">Camilo Zapata</span>
+                                        <span class="testimonial__perfil-detail">Cliente Tiktok (BGA)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    Hola a todos, quería compartir mi experiencia reciente con esta increíble empresa y su oferta del combo de Magic Clip 5 Estrellas junto con la patillera por solo $260.000, con envíos gratuitos a todo Colombia. ¡Simplemente asombroso! Desde el momento en que descubrí esta oferta, supe que tenía que aprovecharla. La idea de obtener dos productos de calidad a un precio tan atractivo me intrigó de inmediato. Decidí realizar mi pedido y no podría estar más satisfecho con la experiencia en general. Realicé el pago anticipado, lo cual siempre genera un poco de ansiedad, pero en este caso, valió la pena. Recibí mi pedido en tiempo récord y la calidad de los productos superó mis expectativas. La Magic Clip 5 Estrellas y la patillera son simplemente fantásticas, y el hecho de que el envío fuera gratuito a todo Colombia fue un gran plus. Recomiendo encarecidamente esta oferta a cualquiera que esté en busca de herramientas de calidad a un precio accesible. ¡No se arrepentirán!
+                                </p>
+                                <h3 class="testimonial__date">Feb 23. 2024</h3>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">Sebastian Paez</span>
+                                        <span class="testimonial__perfil-detail">Cliente Tiktok (MED)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-button-next">
+                            <i class='bx bx-right-arrow-alt' ></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class='bx bx-left-arrow-alt' ></i>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__images">
+                        <div class="testimonial__square"></div>
+                        <img src="assets/img/testimonial.png" alt="" class="testimonial__img">
+                    </div>
+                </div>
+            </section> -->
+
+            <!--==================== NEW ====================-->
+            <!-- <section class="new section container" id="new">
+                <h2 class="section__title">
+                    NUEVOS TRIMMERS & CLIPPERS
+                </h2>
+                
+                <div class="new__container">
+                    <div class="swiper new-swiper">
+                        <div class="swiper-wrapper">
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="assets/img/new1.png" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Babyliss Pro | Promocion Patillera</h3>
+                                    <span class="new__price">$90.000 COP</span>
+                                </div>
+
+                                <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto" class="button new__button">Realizar Pedido</a>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="assets/img/new2.png" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Kemei 2299 | Promoción Patillera</h3>
+                                    <span class="new__price">2 x $100.000 COP</span>
+                                </div>
+        
+                                <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto" class="button new__button">Realizar Pedido</a>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="assets/img/new3.png" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">LENCE-PRO| COMBO X2 PATILLERA</h3>
+                                    <span class="new__price">$155.000 COP</span>
+                                </div>
+        
+                                <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto" class="button new__button">Realizar Pedido</a>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="assets/img/new4.png" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">VGR V-268| PROFESIONAL CLIPPER</h3>
+                                    <span class="new__price">$105.500 COP</span>
+                                </div>
+        
+                                <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto" class="button new__button">Realizar Pedido</a>
+                            </article>                       
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!--==================== NEWSLETTER ====================-->
+            <section class="newsletter section container">
+                <div class="newsletter__bg grid">
+                    <div>
+                        <h2 class="newsletter__title">Contactate <br>con nosotros</h2>
+                        <p class="newsletter__description">
+                            No te pierdas de nuestras actividades. Subscribete y recibe las mejores ofertas, descuentos, cupones, regalos y mucho más. 
+                        </p>
+                    </div>
+
+                    <form action="" class="newsletter__subscribe">
+                        <input type="email" placeholder="Dale click Para ir a WhatsApp" disabled class="newsletter__input">
+                        <a href="https://wa.me/+573208759798?text=Hola%20buen%20dia%20,me%20interesa%20tu%20producto" class="button">
+                            WhatsApp
+                        </a>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">Nuestra información</h3>
+
+                    <ul class="footer__list">
+                        <li>Colombia</li>
+                        <li>Barrancabermeja Santander</li>
+                        <li>Smart & Tech</li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">Acerca de</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="pago.html" class="footer__link">Pago del producto</a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/+573246394689?text=Hola%20buenas%20,me%20interesa%20uno%20de%20tus%20productos%20smart%20&%20tech" class="footer__link">Atención al cliente</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Acerca de nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Derechos de Autor</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Product</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Relojes Digitales</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Audifonos Alta Gama</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Mouse Inhalambricos</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Llaveros animados</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+
+                    <ul class="footer__social">
+                        <a href="#" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+
+                        <a href="https://wa.me/+573246394689?text=Hola%20buenas%20,me%20interesa%20uno%20de%20tus%20productos%20smart%20&%20tech" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-whatsapp' ></i>
+                        </a>
+
+                        <a href="#" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="footer__copy">&#169; Smart & Tech. Todos los derechos Reservados</span>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        
+    <!--Sweet Js-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        Swal.fire({
+        title: "Bienvenido!",
+        text: "Smart & Tech © !",
+        icon: "success"
+        });
+    </script>
+        
+    </body>
+</html>

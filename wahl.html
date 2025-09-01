@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============--> 
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Nike Clothing Store</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class='bx bxs-business nav__logo-icon'></i> PROMO COLOMBIA
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">INICIO</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">W MARK</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="cuelleros.html" class="nav__link">CUELLEROS</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="pago.html" class="nav__link">PAGOS EN LINEA</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x' ></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class='bx bx-shopping-bag' ></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt' ></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== CART ====================-->
+    <!-- <div class="cart" id="cart">
+        <i class='bx bx-x cart__close' id="cart-close"></i>
+
+        <h2 class="cart__title-center">Carrito</h2>
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/oversize1.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Jazzmaster</h3>
+                    <span class="cart__price">$1050</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/featured3.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Rose Gold</h3>
+                    <span class="cart__price">$850</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/new1.png" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Longines Rose</h3>
+                    <span class="cart__price">$980</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item">3 items</span>
+            <span class="cart__prices-total">$2880</span>
+        </div>
+    </div> -->
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__img-bg">
+                    <img src="assets/img/oversize1.png" alt="" class="home__img">
+
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                        Envios Gratis
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                        Colombia
+                    </a>
+                    <a href="https://www.tiktok.com/@promociones.colom" target="_blank" class="home__social-link">
+                        Tiktok
+                    </a>
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">CAMISETAS NIKE <br>LIMITED EDITION</h1>
+                    <p class="home__description">
+                        Ultimos diseños de las nuevas camisetas Nike Importadas Anime-Style, 
+                        con un moderno y resistente bordado & o estampados. Originales contramarcadas.
+                    </p>
+                    <span class="home__price">$75.000 COP X2</span>
+
+                    <div class="home__btns">
+                        <a href="#" class="button button--gray button--small">
+                            Descubrir Más
+                        </a>
+
+                        <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto%20Camiseta%20Nike%20Deformed" class="button home__button">Realizar Pedido</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== FEATURED ====================-->
+        <section class="featured section container" id="featured">
+            <h2 class="section__title">
+                Caracterizados
+            </h2>
+
+            <div class="featured__container grid">
+                <article class="featured__card">
+                    <span class="featured__tag">En venta</span>
+
+                    <img src="assets/img/oversize2.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Camiseta Nike Square</h3>
+                        <span class="featured__price">$40.000 COP</span>
+                    </div>
+
+                    <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto%Camiseta%20Nike%20Square" class="button featured__button">Realizar Pedido</a>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">En venta</span>
+
+                    <img src="assets/img/oversize3.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Camiseta Anime</h3>
+                        <span class="featured__price">$40.000 COP</span>
+                    </div>
+
+                    <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto%20Camiseta%20Anime" class="button featured__button">Realizar Pedido</a>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">En Venta</span>
+
+                    <img src="assets/img/oversize4.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Camiseta Nike 777</h3>
+                        <span class="featured__price">$40.000 COP</span>
+                    </div>
+
+                    <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto%20Camiseta%20Nike%20777" class="button featured__button">Realizar Pedido</a>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== STORY ====================-->
+        <section class="story section container">
+            <div class="story__container grid">
+                <div class="story__data">
+                    <h2 class="section__title story__section-title">
+                        Camisetas Más Vendidas
+                    </h2>
+
+                    <h1 class="story__title">
+                        Estilos Nike<br> de este año
+                    </h1>
+
+                    <p class="story__description">
+                        Personalizamos tus camisetas como tu lo desees.
+                        escribenos como la quieres y nosotros lo hacemos exclusivo para ti.
+                        Envios Nacionales | Colombia
+                    </p>
+
+                    <a href="#" class="button button--small">Descubrir Más Estilos</a>
+                </div>
+
+                <div class="story__images">
+                    <img src="assets/img/oversize5.png" alt="" class="story__img">
+                    <div class="story__square"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PRODUCTS ====================-->
+        <section class="products section container" id="products">
+            <h2 class="section__title">
+                Products
+            </h2>
+
+            <div class="products__container grid">
+                <article class="products__card">
+                    <img src="assets/img/oversize6.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Camiseta Double Nike</h3>
+                    <span class="products__price">$40.000 cop</span>
+
+                    <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto%20Camiseta%20Double%20Nike" class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </a>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/oversize7.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Camiseta Nike Original</h3>
+                    <span class="products__price">$40.000 cop</span>
+
+                    <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto%20Camiseta%20Nike%20Original" class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </a>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/oversize8.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Camiseta Nike | Just do it</h3>
+                    <span class="products__price">$40.000 cop</span>
+
+                    <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto%20Camiseta%20Nike%20Just%20Do%20it" class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </a>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/oversize9.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Camiseta Nike | Fresh Style</h3>
+                    <span class="products__price">$40.000 cop</span>
+
+                    <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto%20Camiseta%20Nike%20Fresh%20Style" class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </a>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/oversize5.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Camiseta Nike | Lean Glass</h3>
+                    <span class="products__price">$40.000 cop</span>
+
+                    <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto%20Camiseta%20Nike%20Lean%20Glass" class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </a>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/oversize10.png" alt="" class="products__img">
+
+                    <h3 class="products__title">Camiseta Nike | Original Classic</h3>
+                    <span class="products__price">$40.000 cop</span>
+
+                    <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto%20Camiseta%20Nike%20Original%20Classic" class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonial section container">
+            <div class="testimonial__container grid">
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                Son los mejores Busos y Camisetas que uno puede comprar, además ellos siempre traen diseños innovadores y las nuevas tendencias, con un precio adsequible & especialmente con una gran atención. 
+                                Siempre están atentos a tus preguntas, se los recomiendo totalmente.
+                            </p>
+                            <h3 class="testimonial__date">Abril 16. 2022</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Carlos Perez</span>
+                                    <span class="testimonial__perfil-detail">Cliente activo</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                Me encanta la atención que brindan al cliente, tienen muchos diseños innovadores y en tendencia, Mi primer pedido lo pagué anticipadamente
+                                por Nequi para ver si eran seriós y en menos de 5 dias ya tenia mis busos en la puerta de mi casa. hacen envios Nacionales, Son confiables, honestos y te diseñan lo que tu quieras, eso fue lo que me encantó.
+                                Sigan así y Nunca cambien, muy pronto estaré haciendo otro pedido.
+                            </p>
+                            <h3 class="testimonial__date">Marzo 25. 2022</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Natalia Rodriguez</span>
+                                    <span class="testimonial__perfil-detail">Cliente activo</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                La verdad es que estoy sin palabras de la cantidad de diseños, busos y camisetas innovadoras que está empresa trae al mercado,
+                                yo se los recomiendo con los ojos cerrados, mi primer pedido fue en Septiembre del 2022, pedí dos Busos talla L, los pague anticipadamente arriesgandome para ver que tan serios eran.
+                                no hubieron inconvenientes Y recibí mi pedido en el transcurso de la misma semana en mi domicilio, la calidad del producto es muy original. Y lo que tu pidas te lo diseñan, eso estuvo genial.
+                            </p>
+                            <h3 class="testimonial__date">Sept 7. 2022</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Raul Zaman</span>
+                                    <span class="testimonial__perfil-detail">Cliente Activo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next">
+                        <i class='bx bx-right-arrow-alt' ></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-left-arrow-alt' ></i>
+                    </div>
+                </div>
+
+                <div class="testimonial__images">
+                    <div class="testimonial__square"></div>
+                    <img src="assets/img/oversize11.png" alt="" class="testimonial__img">
+                </div>
+            </div>
+        </section>
+
+        <!--==================== NEW ====================-->
+        <section class="new section container" id="new">
+            <h2 class="section__title">
+                Nuevos estilos
+            </h2>
+            
+            <div class="new__container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="assets/img/oversize12.png" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Square Nike Desing T-shirt</h3>
+                                <span class="new__price">$40.000 COP</span>
+                            </div>
+
+                            <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto%20Square%20Nike%20Design%20T%20Shirt" class="button new__button">Realizar Pedido</a>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="assets/img/oversize13.png" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Original Nike T-SHIRT</h3>
+                                <span class="new__price">$40.000 COP</span>
+                            </div>
+    
+                            <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto%20Original%20Nike%20T%20Shirt" class="button new__button">Realizar Pedido</a>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="assets/img/oversize14.png" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">CH Original Nike T-shirt</h3>
+                                <span class="new__price">$40.000 COP</span>
+                            </div>
+    
+                            <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto%20CH%20Original%20Nike%20T%20Shirt" class="button new__button">Realizar Pedido</a>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="assets/img/oversize15.png" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Classic Original Nike T-shirt</h3>
+                                <span class="new__price">$40.000 COP</span>
+                            </div>
+    
+                            <a href="https://wa.me/+573208759798?text=Hola%20buenas%20,me%20interesa%20tu%20producto%20Classic%20Original%20Nike%20T%20Shirt" class="button new__button">Realizar Pedido</a>
+                        </article>                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== NEWSLETTER ====================-->
+        <section class="newsletter section container">
+            <div class="newsletter__bg grid">
+                <div>
+                    <h2 class="newsletter__title">Contactate <br>con nosotros</h2>
+                    <p class="newsletter__description">
+                        No te pierdas de nuestras actividades. Subscribete y recibe las mejores ofertas, descuentos, cupones, regalos y mucho más. 
+                    </p>
+                </div>
+
+                <form action="" class="newsletter__subscribe">
+                    <input type="email" placeholder="Dale click Para ir a WhatsApp --->" disabled class="newsletter__input">
+                    <a href="#" class="button">
+                        WhatsApp
+                    </a>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Nuestra información</h3>
+
+                <ul class="footer__list">
+                    <li>Colombia</li>
+                    <li>Barrancabermeja Santander</li>
+                    <li>@nike_colombian_store - Instagram</li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Acerca de</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Pago del producto</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Atención al cliente</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Acerca de nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Derechos de Autos</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Product</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Camisetas</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Busos Capoteros</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Conjuntos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Pantalonetas & Sudaderas</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#169; Nike clothing Store Colombia. Todos los derechos Reservados</span>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up"> 
+        <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
